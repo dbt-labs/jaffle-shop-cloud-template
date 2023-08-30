@@ -2,16 +2,10 @@
 target/
 dbt_packages/
 logs/
-*.duckdb
-*.duckdb.wal
-reports/sources/*.csv
-.meltano
 .DS_Store
 venv
 semantic_manifest/
 semanitc_manifest.json
 profiles.yml
-models/metrics/metrics_test
-models/metrics/semantic_manifest.json
 semantic_manifest
 dbt-core/

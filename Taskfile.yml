@@ -1,7 +1,9 @@
 version: "3"
 
 tasks:
-  deps:
+  setup:
     cmds:
+      - brew install dbt-cloud-cli
       - python -m pip install --progress-bar off -r requirements.txt
       - dbt deps
+      - dbt seed
