@@ -1,11 +1,10 @@
 .venv
+venv
+.env
+env
+
 target/
 dbt_packages/
 logs/
+
 .DS_Store
-venv
-semantic_manifest/
-semanitc_manifest.json
-profiles.yml
-semantic_manifest
-dbt-core/
