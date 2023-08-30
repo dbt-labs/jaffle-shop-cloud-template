@@ -1,14 +1,19 @@
 version: "3"
 
 tasks:
+  venv:
+    cmds:
+      - python -m venv .venv
   install-cloud:
     cmds:
       - brew tap dbt-labs/dbt-cli
       - brew install dbt-cloud-cli
+      - python -m pip install --upgrade pip
       - python -m pip install --progress-bar off -r requirements-cloud.txt
       - rm profiles.yml
   install-core:
     cmds:
+      - python -m pip install --upgrade pip
       - python -m pip install --progress-bar off -r requirements-core.txt
       - rm dbt_cloud.yml
   setup:
